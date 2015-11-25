@@ -1,0 +1,135 @@
+body {background-repeat: no-repeat; background-size: cover;}
+body{
+	background-image:url("http://74211.com/wallpaper/picture_big/Free_Scenery_Wallpaper__Shows_Sunny_Springtime_Keep_Spring_All_Around.jpg");
+}
+#temp{margin-top:50px;}
+#title {
+	color:black !important;
+	margin-top:50px;
+	margin-bottom:30px;
+}
+#title h1{
+	font-family: 'Orbitron', sans-serif;
+	color:black !important;
+	font-size: 60px;
+}
+.location{
+	max-width: 600px;
+}
+h2{
+	font-size:50px;
+}
+#getWeather{
+  border: 2px solid #228B22;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 40px;
+  width: 130px;
+  border-color: #228B22 ;
+  background-color: white;
+  float: none;
+  margin: 0 auto;
+  color:#228B22;
+  opacity:.8;
+  margin-bottom:25px;
+}
+#getWeather:active {
+  outline: none;
+  text-decoration: none;
+}
+#getWeather:hover{
+  background-color: #169c79;
+  color: white;
+}
+#getWeather:focus{
+  outline: none;
+  text-decoration: none;
+}
+#cityText,#countryText{
+	 margin-bottom: 40px;
+}
+#selectyourlocation{
+	margin-bottom: 40px;
+	font-family: 'Orbitron', sans-serif; color:#228B22;
+}
+#askagain{
+  border: 2px solid #228B22;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
+  border-color: #228B22 ;
+  background-color: white;
+  float: none;
+  margin: 0 auto;
+  color:#228B22;
+  opacity:.8;
+  margin-bottom:25px;
+}
+#askagain:active {
+  outline: none;
+  text-decoration: none;
+}
+#askagain:hover{
+  background-color: #169c79;
+  color: white;
+}
+#askagain:focus{
+  outline: none;
+  text-decoration: none;
+}
+.icons {
+	margin:5px;
+}
+.white{
+	color:white !important;
+}
+.spec {
+	font-family: 'Orbitron', sans-serif; color:#228B22;
+}
+.spaced {
+	margin-top:30px;
+}
+.opac {
+	opacity:.8;
+}
+#temp, #info, #cityandcountry{
+	opacity:0;
+}
+#info{
+	margin-top: 50px;
+}
+#celsius,#farenheit{
+  border: 2px solid #228B22;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 40px;
+  width: 60px;
+  border-color:#228B22 ;
+  background-color: white;
+  float: none;
+  margin: 0 auto;
+  color:#228B22;
+  opacity:.8;
+  margin-bottom:15px;
+}
+#celsius:active ,#farenheit:active{
+  outline: none;
+  text-decoration: none;
+}
+#celsius:hover,#farenheit:hover{
+  background-color: #169c79;
+  color: white;
+}
+#celsius:focus ,#farenheit:focus{
+  outline: none;
+  text-decoration: none;
+}
+#celsius.active{
+  background-color: #169c79;
+  color: white;
+}
+#farenheit.active{
+  background-color: #169c79;
+  color: white;
+}

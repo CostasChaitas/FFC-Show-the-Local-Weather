@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container" id="main">
+    <div class="row" id="title">
+
+      <div class="col-xs-12">
+        <h1 class="text-primary text-center">Local Weather</h1>
+      </div>
+    </div>
+    <div class="row" id="askWeather">
+      <div class="container location well well-sm text-center">
+        <div class="row">
+          <div class="select">
+            <h1 id="selectyourlocation">Search a location to get the weather.</h1>
+          </div>
+          <div class="col-xs-offset-3 col-xs-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="cityText" placeholder="City">
+            </div>
+            <!--form-group -->
+            <div class="form-group">
+              <input type="text" class="form-control" id="countryText" placeholder="Country">
+            </div>
+            <!--form-group -->
+            <div class="form-group">
+              <button class="btn btn-block btn-primary" id="getWeather">Get Weather</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" id="showWeather">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-xs-offset-5 col-xs-2">
+            <button class="btn btn-block btn-primary" id="askagain">Ask Again</button>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-xs-12" id="cityandcountry">
+          </div>
+
+        </div>
+        <div class="row spec">
+          <div class="col-xs-12" id="loading">
+            <i class="fa fa-cloud fa-2x fa-spin"></i>
+            <p>Getting Location...</p>
+          </div>
+        </div>
+
+        <div class="container spec" id="temp">
+          <div class="row">
+            <div class="col-xs-2 col-xs-offset-4">
+              <h2 id="temperature"></h2>
+            </div>
+            <div class="col-xs-4 spaced">
+              <div class="btn-group">
+                <button type="button" id="farenheit" class="btn btn-default active">°F</button>
+                <button type="button" id="celsius" class="btn btn-default">°C</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container well well-sm text-center opac" id="info">
+          <div class="row icons">
+            <div class="col-xs-3">
+              <img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/sunrise-512.png" alt="Sunrise" style="width:48px;" />
+            </div>
+            <div class="col-xs-3">
+              <img src="https://cdn2.iconfinder.com/data/icons/lovely-weather-icons/32/sunset-512.png" alt="Sunset" style="width:48px;" />
+            </div>
+            <div class="col-xs-3">
+              <img src="http://images.clipartpanda.com/cloud-icon-png-clouds.png" alt="Clouds" style="width:48px;" />
+            </div>
+            <div class="col-xs-3">
+              <img src="https://cdn3.iconfinder.com/data/icons/chubby-weather/439/rain_heavy-512.png" alt="Rain" style="width:48px;" />
+            </div>
+          </div>
+          <div class="row icons spec">
+            <div class="col-xs-3">
+              <p id="sunrise"></p>
+            </div>
+            <div class="col-xs-3">
+              <p id="sunset"></p>
+            </div>
+            <div class="col-xs-3">
+              <p id="cloud"></p>
+            </div>
+            <div class="col-xs-3">
+              <p id="rain">0 in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
